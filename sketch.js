@@ -14,7 +14,7 @@ function setup() {
   orbitOffset = 1000;
   orbitRate = 0.000003;
 
-  background(0);
+  background(23);
 }
 
 function draw() {
