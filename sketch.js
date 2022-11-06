@@ -34,7 +34,7 @@ function draw() {
       const xOff = map(cos(a), -1, 1, 0, travRadius);
       const yOff = map(sin(a), -1, 1, 0, travRadius);
       const perlin = noise(xOff + orbit * 100, yOff, timeOff);
-      const perlin2 = noise(xOff + orbit * 100, yOff + 1000, timeOff);
+      const perlin2 = (noise(xOff + orbit * 100, yOff + 1000, timeOff) * 2) % 1;
 
       const r = map(perlin, 0, 1, 100, 300);
 
